@@ -1,5 +1,5 @@
 {
-    "manifest_version" : 1,
+    "manifest_version" : 3,
     "name" : "File Downloader",
     "description" : "Download any file, video or image with just one click.",
     "version" : "1.0",
