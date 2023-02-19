@@ -16,7 +16,7 @@ form input{
     outline: 1px solid transparent;
     padding: 14px 10px;
     border-radius: 5px;
-    margin-bottom: 14px;
+    margin-bottom: 5px;
     transition: 0.2s ease-in-out;
     box-shadow: 0px 0px 5px 1px #00000014;
 }
@@ -30,12 +30,16 @@ form button{
     transition: 0.1s ease-in-out;
     background-color: #537FE7;
     color: #fff;
+    opacity: 0.7;
 }
 form button:hover{
     background-color: #406ace;
 }
 form button:active{
     transform: scale(0.98);
+}
+form input:valid ~ button{
+    opacity: 1;
 }
 section{
     margin-top: 20px;
@@ -48,4 +52,9 @@ section h1{
 section p{
     font-size: 15px;
     line-height: 1.6;
+}
+#failedMsg{
+    color: red;
+    font-size: 12px;
+    margin-bottom: 14px;
 }
