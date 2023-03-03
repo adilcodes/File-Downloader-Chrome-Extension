@@ -22,7 +22,9 @@ function fetchFile(inputtedUrl) {
 }
 
 downloadBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  downloadBtn.innerText = "Downloading File..."
-  fetchFile(urlInput.value);
+  if(urlInput.value != ""){
+    e.preventDefault();
+    downloadBtn.innerText = "Downloading File..."
+    fetchFile(urlInput.value);
+  }
 });
